@@ -166,7 +166,7 @@
           ansible.builtin.iptables:
             chain: "INPUT"
             protocol: "tcp"
-            destination_port: "{{ inv_install_docker_portainer_http_port }}"
+            destination_port: "{{ inv_install_pufferpanel_web_port }}"
             jump: "DROP"
             source: "! 127.0.0.1"
             comment: "Force external user to use Apache2"
