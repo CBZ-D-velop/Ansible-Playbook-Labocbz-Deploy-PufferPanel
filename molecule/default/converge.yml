@@ -1,0 +1,5 @@
+---
+- name: "Include labocbz.deploy_pufferpanel playbook"
+  tags:
+      - "labocbz.deploy_pufferpanel"
+  ansible.builtin.import_playbook: "../../playbook.yml"
