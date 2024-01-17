@@ -25,4 +25,4 @@
 
 - name: "labocbz.install_pufferpanel"
   src: "https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Install-PufferPanel.git"
-  version: "develop"
+  version: "1.0"
