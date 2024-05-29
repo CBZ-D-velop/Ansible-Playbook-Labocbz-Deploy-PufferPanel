@@ -31,9 +31,10 @@ After the install, you need to create your first Admin user. This command will h
 docker exec -it pufferpanel /pufferpanel/pufferpanel user add
 # and follow inputs
 ```
+
 ## Deployment diagramm
 
-![](./assets/Ansible-Playbook-Labocbz-Deploy-PufferPanel.drawio.svg)
+![Ansible-Playbook-Labocbz-Deploy-PufferPanel](./assets/Ansible-Playbook-Labocbz-Deploy-PufferPanel.drawio.svg)
 
 This diagram illustrates a potential deployment scenario using the provided playbook. In this configuration, Apache2 is chosen to serve as the TLS/SSL front server for PufferPanel. Both Apache2 and PufferPanel reside on the same machine, allowing seamless communication between them. PufferPanel exposes a port for SFTP connections to game servers.
 
@@ -46,7 +47,6 @@ Apache2 is installed as a package, while PufferPanel is deployed as a container.
 You have to run multiples tests. *tests with an # are mandatory*
 
 ```MARKDOWN
-# lint
 # syntax
 # converge
 # idempotence
@@ -71,7 +71,6 @@ yamllint -c ./.yamllint .
 ansible-lint --config=./.ansible-lint .
 
 # Execute and test your playbook
-molecule lint
 molecule create
 molecule list
 molecule converge
@@ -125,6 +124,14 @@ Here you can put your change to keep a trace of your work and decisions.
 * Added support for new CI base
 * Edit all vars with __
 * Tested and validated on Docker
+
+### 2024-05-19: New CI
+
+* Added Markdown lint to the CICD
+* Rework all Docker images
+* Change CICD vars convention
+* New workers
+* Removed all automation based on branch
 
 ## Authors
 

@@ -1,7 +1,0 @@
----
-- name: "Include labocbz.deploy_pufferpanel playbook"
-  tags:
-      - "labocbz.deploy_pufferpanel"
-  vars:
-    tower_env: "cicd-ubuntu-22"
-  ansible.builtin.import_playbook: "../../playbook.yml"
