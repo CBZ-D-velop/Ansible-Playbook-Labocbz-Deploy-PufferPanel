@@ -3,5 +3,5 @@
   tags:
       - "labocbz.deploy_pufferpanel"
   vars:
-    tower_env: "cicd-ubuntu-22"
+    tower_env: "cicd-docker-dind"
   ansible.builtin.import_playbook: "../../playbook.yml"
